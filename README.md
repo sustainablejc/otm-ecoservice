@@ -170,3 +170,13 @@ $ curl "localhost:13000/eco.json?otmcode=FICA&diameter=20&region=InlEmpCLM"
 
 #### Factors
 What i-Tree calls 'benefit categories', we refer to as 'factors' in our source. These are distinct ways in which environmental influence can be quantified for trees. Examples include 'CO2 avoided' and 'electricity (saved)'.
+
+
+## Running with docker
+To run with docker, do the following.
+1. Move everything from Godep/_workspace/src/github.com into src/github.com
+2. Run the following
+```
+docker build -t otm-ecoservice:1.0 .
+
+```
